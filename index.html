@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidebar App</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="float-btn" onclick="toggleSidebar()">☰</div>
+
+<div class="overlay" onclick="toggleSidebar()"></div>
+
+<div class="sidebar">
+
+<div class="music-card">
+<h3>🎵 Música</h3>
+<p>Tocando agora</p>
+<div class="controls">
+<button>⏮</button>
+<button>⏯</button>
+<button>⏭</button>
+</div>
+</div>
+
+<div class="tasks-card">
+<h3>✔ Tarefas</h3>
+<ul id="taskList">
+<li onclick="done(this)">Responder mensagens</li>
+<li onclick="done(this)">Organizar ideias</li>
+<li onclick="done(this)">Estudar</li>
+</ul>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
